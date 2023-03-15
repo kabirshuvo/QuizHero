@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- You don't need to change noChange.js file. It's fine -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-3xl text-center py-7 bg-zinc-700 text-white">
+        Question Blog
+      </h1>
+    </header>
+    <main>
+      <!-- *Question*(1) Can you tell me how .map(), .filter(), .forEach(), and .find() are different in JavaScript?-->
+      <section class="bg-slate-300">
+        <!-- *Question* -->
+        <div>
+          <h3>
+            <span class="text-2xl px-1">Q:1</span>
+            <span
+              >Can you tell me how .map(), .filter(), .forEach(), and .find()
+              are different in JavaScript?
+            </span>
+          </h3>
+        </div>
+        <!-- *Answer* -->
+        <div>
+          <ul class="py-2">
+            <li class="py-2">
+              .map(): creates a new array by applying a function to each element
+              of the original array and it Returns something.
+            </li>
+            <li class="py-2">
+              .filter(): creates a new array with all elements that pass a
+              certain condition, based on a function that returns a boolean
+              value.
+            </li>
+            <li class="py-2">
+              .forEach() iterates over all elements of an array and applies a
+              function to each element.
+            </li>
+            <li class="py-2">
+              .find() returns the first element in an array that satisfies a
+              certain condition, based on a function that returns a boolean
+              value.
+            </li>
+          </ul>
+          <p class="py-2">
+            In summary, .map() and .filter() both creates a new array, whereas
+            .forEach() and .find() do not. <br />
+            .forEach() applies a function to each element without modifying the
+            array, while .map() and .filter() both modify the array or create a
+            new one. Finally, .filter() returns an array of elements that pass a
+            certain condition, while .find() returns only the first element that
+            passes the condition.
+          </p>
+        </div>
+      </section>
+      <!-- *Question*(2) differences between LocalStorage, Session Storage and cookies-->
+      <section class="bg-slate-400">
+        <!-- *Question* -->
+        <div>
+          <h3>
+            <span class="text-2xl px-1">Q:2</span>
+            <span
+              >What is the differences between LocalStorage, Session Storage and
+              cookies?
+            </span>
+          </h3>
+        </div>
+        <!-- *Answer* -->
+        <div><p>This is the answer</p></div>
+      </section>
+      <!-- *Question*(3) What is event Loop?-->
+      <section class="bg-slate-500">
+        <!-- *Question* -->
+        <div>
+          <h3>
+            <span class="text-2xl px-1">Q:3</span>
+            <span>What is event Loop? </span>
+          </h3>
+        </div>
+        <!-- *Answer* -->
+        <div><p>This is the answer</p></div>
+      </section>
+      <!-- *Question*(4) What do you understand by reading quizTimer() function?-->
+      <section class="bg-slate-600">
+        <!-- *Question* -->
+        <div>
+          <h3>
+            <span class="text-2xl px-1">Q:4</span>
+            <span>Explain what the quizTimer() function does? </span>
+          </h3>
+        </div>
+        <!-- *Answer* -->
+        <div><p>This is the answer</p></div>
+      </section>
+      <!-- *Question*(5) Explain the purpose or functionality of the chooseQuiz() function?-->
+      <section class="bg-slate-700">
+        <!-- *Question* -->
+        <div>
+          <h3>
+            <span class="text-2xl px-1">Q:5</span>
+            <span
+              >Explain the purpose or functionality of the chooseQuiz()
+              function?
+            </span>
+          </h3>
+        </div>
+        <!-- *Answer* -->
+        <div><p>This is the answer</p></div>
+      </section>
+    </main>
+    
+  </body>
+</html>
