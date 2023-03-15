@@ -33,113 +33,167 @@
       };
     </script>
   </head>
-  <body>
+  <body class="container mx-auto">
     <header>
-      <h1 class="text-3xl text-center py-7 bg-zinc-700 text-white">
+      <h1 class="text-3xl text-center py-7 rounded bg-zinc-700 text-white">
         Question Blog
       </h1>
     </header>
-    <main>
+    <main class="flex flex-col gap-2">
       <!-- *Question*(1) Can you tell me how .map(), .filter(), .forEach(), and .find() are different in JavaScript?-->
-      <section class="bg-slate-300">
+      <section class="bg-slate-300 rounded">
         <!-- *Question* -->
         <div>
-          <h3>
-            <span class="text-2xl px-1">Q:1</span>
-            <span
+          <h3 class="py-2">
+            <span class="text-3xl px-3 text-orange-500">Q:1</span>
+            <span class="text-2xl"
               >Can you tell me how .map(), .filter(), .forEach(), and .find()
               are different in JavaScript?
             </span>
           </h3>
         </div>
         <!-- *Answer* -->
-        <div>
+        <div class="py-3 px-14">
           <ul class="py-2">
-            <li class="py-2">
-              .map(): creates a new array by applying a function to each element
-              of the original array and it Returns something.
+            <li class="py-2 text-lg px-4">
+              <span class="text-2xl">.map():</span> By using .map() function we
+              can easily a create a new array from the original array or array
+              of object. .map() function always returns something and we can
+              easily store that returns in a variable.
             </li>
-            <li class="py-2">
-              .filter(): creates a new array with all elements that pass a
-              certain condition, based on a function that returns a boolean
-              value.
+            <li class="py-2 text-lg px-4">
+              <span class="text-2xl">.filter():</span> By using a condition with
+              .filter() function we can confidently create an array, with the
+              desired retruns form the original array or array of object.
             </li>
-            <li class="py-2">
-              .forEach() iterates over all elements of an array and applies a
-              function to each element.
+            <li class="py-2 text-lg px-4">
+              <span class="text-2xl">.forEach():</span> To iterate and to apply
+              a function over all elements of an array. .forEach() function dont
+              returns anything.
             </li>
-            <li class="py-2">
-              .find() returns the first element in an array that satisfies a
-              certain condition, based on a function that returns a boolean
-              value.
+            <li class="py-2 text-lg px-4">
+              <span class="text-2xl">.find():</span> To find out a specific and
+              single element form an array. Basically it returns the first one.
             </li>
           </ul>
-          <p class="py-2">
-            In summary, .map() and .filter() both creates a new array, whereas
-            .forEach() and .find() do not. <br />
+          <p class="py-2 text-lg px-4">
+            <span class="text-2xl">In summary</span>, .map() and .filter() both
+            creates a new array, whereas .forEach() and .find() do not. <br />
             .forEach() applies a function to each element without modifying the
             array, while .map() and .filter() both modify the array or create a
-            new one. Finally, .filter() returns an array of elements that pass a
-            certain condition, while .find() returns only the first element that
-            passes the condition.
+            new one. <br />
+            <span class="text-2xl">Finally</span>, .filter() returns an array of
+            elements that pass a certain condition, while .find() returns only
+            the first element that passes the condition.
           </p>
         </div>
       </section>
       <!-- *Question*(2) differences between LocalStorage, Session Storage and cookies-->
-      <section class="bg-slate-400">
+      <section class="bg-slate-400 rounded">
         <!-- *Question* -->
         <div>
-          <h3>
-            <span class="text-2xl px-1">Q:2</span>
-            <span
+          <h3 class="py-2">
+            <span class="text-3xl px-3 text-orange-500">Q:2</span>
+            <span class="text-2xl"
               >What is the differences between LocalStorage, Session Storage and
               cookies?
             </span>
           </h3>
         </div>
         <!-- *Answer* -->
-        <div><p>This is the answer</p></div>
+        <div class="py-3 px-14">
+          <p class="py-2 text-lg px-4">
+            localStorage, sessionStorage, and cookies allows us to store data on
+            the client-side of a web browser.
+          </p>
+
+          <p class="py-2 text-lg px-4">
+            <span class="text-2xl">localStorage:</span> With no expiration date
+            localStorage allows us to store key-value pairs in a web browser's
+            storage. This data will persist even after the browser is closed,
+            until explicitly cleared.
+          </p>
+
+          <p class="py-2 text-lg px-4">
+            <span class="text-2xl">sessionStorage:</span> it is as similar as
+            localStorage, but the only difference is sessionStorage stored data
+            is cleared when the user closes the browser tab or window or with
+            the session ends.
+          </p>
+
+          <p class="py-2 text-lg px-4">
+            <span class="text-2xl">Cookies:</span> Cookies are primarily used
+            for tracking user activity or for session management, and have a
+            limited storage capacity of up to 4KB.
+          </p>
+        </div>
       </section>
       <!-- *Question*(3) What is event Loop?-->
-      <section class="bg-slate-500">
+      <section class="bg-slate-500 rounded">
         <!-- *Question* -->
         <div>
-          <h3>
-            <span class="text-2xl px-1">Q:3</span>
-            <span>What is event Loop? </span>
+          <h3 class="py-2">
+            <span class="text-3xl px-3 text-orange-500">Q:3</span>
+            <span class="text-2xl">What is event Loop? </span>
           </h3>
         </div>
         <!-- *Answer* -->
-        <div><p>This is the answer</p></div>
+        <div class="py-3 px-14">
+          <p class="py-2 text-lg px-4">
+            If I'm allowed to explain event loop in a single sentence, I would
+            like to say "Concurrency"
+          </p>
+          <p class="py-2 text-lg px-4">
+            The event loop is a Concurrency mechanism in JavaScript. Concurrency
+            mechanism allows non-blocking input output operations by managing
+            the execution of code in a single thread.
+          </p>
+        </div>
       </section>
       <!-- *Question*(4) What do you understand by reading quizTimer() function?-->
-      <section class="bg-slate-600">
+      <section class="bg-slate-600 rounded">
         <!-- *Question* -->
         <div>
-          <h3>
-            <span class="text-2xl px-1">Q:4</span>
-            <span>Explain what the quizTimer() function does? </span>
+          <h3 class="py-2">
+            <span class="text-3xl px-3 text-orange-500">Q:4</span>
+            <span class="text-2xl"
+              >Explain what the quizTimer() function does?
+            </span>
           </h3>
         </div>
         <!-- *Answer* -->
-        <div><p>This is the answer</p></div>
+        <div class="py-3 px-14">
+          <p class="py-2 text-lg px-4">
+            <span class="text-2xl">quizTimer(dismiss)</span> is a single
+            parameter function. if the parameter value is true it will stop
+            conting. In line number 126, of the html file, withe the id="count"
+            is the container to display the timer. after 60 seconds the color of
+            the time count will change to red from green. etc.
+          </p>
+        </div>
       </section>
       <!-- *Question*(5) Explain the purpose or functionality of the chooseQuiz() function?-->
-      <section class="bg-slate-700">
+      <section class="bg-slate-700 mb-7 rounded">
         <!-- *Question* -->
         <div>
-          <h3>
-            <span class="text-2xl px-1">Q:5</span>
-            <span
+          <h3 class="py-2">
+            <span class="text-3xl px-3 text-orange-500">Q:5</span>
+            <span class="text-2xl"
               >Explain the purpose or functionality of the chooseQuiz()
               function?
             </span>
           </h3>
         </div>
         <!-- *Answer* -->
-        <div><p>This is the answer</p></div>
+        <div class="py-3 px-14">
+          <p class="py-2 text-lg px-4">
+            <span class="text-2xl">The chooseQuiz()</span> function is used to
+            manage and update the user's answers to the quiz questions, so that
+            the user can review their answers and see their progress on the
+            quiz.
+          </p>
+        </div>
       </section>
     </main>
-    
   </body>
 </html>
