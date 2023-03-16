@@ -187,7 +187,10 @@ document.querySelector("#submit").addEventListener("click", () => {
 });
 
 //site Relode
-
+const blogFunction = () => {
+  window.location.href = 'https://github.com/kabirshuvo/QuizHero/blob/main/bolg.html';
+}
 const reload = () => {
+  
   window.location.reload();
 }
